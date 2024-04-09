@@ -19,7 +19,7 @@ const Estates = () => {
     return <h1>Loading</h1>
   }
   return (
-    <div className="w-[90%] md:w-5/6 lg:w-5/6 mx-auto">
+    <div className="w-[90%] md:w-5/6 lg:w-5/6 mx-auto font-poppins">
       <h1 className="text-4xl font-bold text-center my-6 md:my-10 ">Estates</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
       {
