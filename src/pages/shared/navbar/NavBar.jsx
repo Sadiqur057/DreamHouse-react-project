@@ -90,7 +90,7 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 items-center ">{links}</ul>
         </div>
-        <div className="navbar-end items-center gap-3">
+        <div className="navbar-end items-center gap-3 mr-2">
           {user && (
             <div
               tabIndex={0}
