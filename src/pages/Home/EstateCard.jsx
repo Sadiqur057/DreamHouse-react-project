@@ -1,5 +1,11 @@
 import { GrLocation } from "react-icons/gr";
 import { BiArea } from "react-icons/bi";
+import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+AOS.init();
+
 const EstateCard = ({ data }) => {
   const {
     estate_title,
@@ -11,9 +17,15 @@ const EstateCard = ({ data }) => {
     area,
     location,
     facilities,
+    id
   } = data || {};
   return (
-    <div className="card card-compact bg-base-100 shadow-lg">
+    <div
+      className="card card-compact bg-base-100 shadow-lg"
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+    >
       <figure className="relative">
         <img
           className="h-[250px] object-cover object-center w-full"
@@ -39,7 +51,7 @@ const EstateCard = ({ data }) => {
             <span className="font-semibold"></span> {location}
           </p>
           <p className="py-1 flex gap-2">
-          <BiArea className="text-xl"/>
+            <BiArea className="text-xl" />
             {area}
           </p>
           <p className="flex gap-2 my-2">
@@ -54,12 +66,18 @@ const EstateCard = ({ data }) => {
           </p>
         </div>
         <div className="flex mt-3 mb-1 justify-end">
-          <button className="btn btn-neutral">View Property</button>
+          <Link to={`property/${id}`} >
+          <button className="btn btn-neutral rounded-sm">View Property</button>
+          </Link>
         </div>
       </div>
       <div></div>
     </div>
   );
+};
+
+EstateCard.propTypes = {
+  data: PropTypes.object,
 };
 
 export default EstateCard;
