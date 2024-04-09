@@ -1,0 +1,74 @@
+[
+  {
+    "image" : "https://i.postimg.cc/vZYXyLx3/luxurious.jpg",
+    "estate_title": "Luxurious Apartment Living",
+    "id": "1",
+    "segment_name": "Apartments",
+    "description": "An upscale apartment with stunning city views, modern amenities, and access to a fitness center and concierge services.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "1,200 sq ft",
+    "location": "789 Oak Street, Metropolis",
+    "facilities": ["living room", "swimming pool"]
+  },
+  {
+    "image" : "https://i.postimg.cc/pVq0yjWr/town-house.jpg",
+    "estate_title": "Modern Townhouse Living",
+    "id": "2",
+    "segment_name": "Townhouses",
+    "description": "A sleek and contemporary townhouse featuring open-plan living spaces, three bedrooms, and a rooftop terrace.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "1,800 sq ft",
+    "location": "456 Elm Avenue, Cityville",
+    "facilities": ["living room", "kitchen", "rooftop"]
+  },
+  {
+    "image" : "https://i.postimg.cc/VvSjHd3B/single-house.jpg",
+    "estate_title": "Charming Family homes",
+    "id": "3",
+    "segment_name": "Single-family homes",
+    "description": "A cozy single-family home with three bedrooms and a spacious backyard, perfect for a growing family.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "2,000 sq ft",
+    "location": "123 Main Street, Anytown",
+    "facilities": ["living room", "kitchen", "backyard"]
+  },
+  {
+    "image" : "https://i.postimg.cc/prdXxSxP/student.jpg",
+    "estate_title": "Student Housing Hub",
+    "id": "4",
+    "segment_name": "Student housing",
+    "description": "A vibrant student housing community offering furnished apartments, study lounges, and on-site laundry facilities.",
+    "price": "$800/month",
+    "status": "rent",
+    "area": "600 sq ft",
+    "location": "101 Campus Drive, Town",
+    "facilities": ["living room", "study lounge"]
+  },
+  {
+    "image" : "https://i.postimg.cc/4yfgc4Yv/slider-15.jpg",
+    "estate_title": "Senior Living Retreat",
+    "id": "5",
+    "segment_name": "Senior living communities",
+    "description": "A peaceful retirement community with spacious apartments, landscaped gardens, and a clubhouse for social gatherings.",
+    "price": "$3,000/month",
+    "status": "rent",
+    "area": "1,500 sq ft",
+    "location": "321 Maple Lane, Serenity Springs",
+    "facilities": ["living room", "kitchen", "clubhouse"]
+  },
+  {
+    "image" : "https://i.postimg.cc/x1C175TG/19.jpg",
+    "estate_title": "Cozy Vacation Rental",
+    "id": "6",
+    "segment_name": "Vacation rentals",
+    "description": "A charming vacation rental cottage nestled by the beach, featuring two bedrooms, a private patio, and ocean views.",
+    "price": "$200/night",
+    "status": "rent",
+    "area": "800 sq ft",
+    "location": "Beachfront, Paradise Island",
+    "facilities": ["living room", "kitchen", "patio"]
+  }
+]
