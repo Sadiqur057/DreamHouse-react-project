@@ -6,7 +6,7 @@ const Contact = () => {
       <Helmet>
         <title>DH | Contact Us</title>
       </Helmet>
-      <div className="grid max-w-6xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x md:glass my-10 w-[90%]">
+      <div className="grid max-w-3xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x md:glass my-10 w-[90%]">
         <div className="p-10 self-center  glass lg:md-transparent md:h-full flex flex-col justify-center mb-6 md:mb-0">
           <h1 className="text-4xl font-bold mb-4">Get in touch</h1>
           <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
