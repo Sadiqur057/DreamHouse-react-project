@@ -1,15 +1,61 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
+import { toast } from "react-toastify";
+
 const NavBar = () => {
-  const activeStyles = "bg-white border px-3 py-2 rounded-xl border-c-primary text-c-primary font-bold hover:bg-c-primary hover:text-[#fff]"
-  const inactiveStyles = "px-3 py-2 font-medium border border-transparent hover:border hover:border-c-primary rounded-xl mx-1 text-c-primary"
-  const links = <>
-    <NavLink to='/' className={(isActive)=> isActive? activeStyles: "font-medium px-2"}>Home</NavLink>
-    <NavLink to='/about' className={({isActive})=> isActive? activeStyles : inactiveStyles}>About</NavLink>
-  </>
+  const { user, logOutUser } = useContext(AuthContext);
+  const handleLogout = () => {
+    logOutUser().then(() => {
+      toast.success("Logged out successfully")
+    });
+  };
+
+  const activeStyles =
+    "lg:border-y transition duration-300 ease-in-out px-3 py-2 border-c-primary text-c-primary font-bold hover:bg-c-primary hover:text-[#fff] text-[15px] my-2 lg:my-0";
+  const inactiveStyles =
+    "px-3 py-2 font-medium border-y border-transparent hover:border-y hover:border-c-primary mx-1 text-c-primary hover:glass text-[15px] my-2 lg:my-0";
+  const links = (
+    <>
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? activeStyles : inactiveStyles)}
+      >
+        Home
+      </NavLink>
+
+      {user && (
+        <NavLink
+          to="/profile"
+          className={({ isActive }) =>
+            isActive ? activeStyles : inactiveStyles
+          }
+        >
+          Profile
+        </NavLink>
+      )}
+      {user && (
+        <NavLink
+          to="/update-profile"
+          className={({ isActive }) =>
+            isActive ? activeStyles : inactiveStyles
+          }
+        >
+          Update Profile
+        </NavLink>
+      )}
+      <NavLink
+        to="/contact"
+        className={({ isActive }) => (isActive ? activeStyles : inactiveStyles)}
+      >
+        Contact Us
+      </NavLink>
+    </>
+  );
   return (
-    <div className="fixed z-10 w-full glass">
-      <div className="navbar">
-        <div className="navbar-start">
+    <div className="fixed w-full glass z-50">
+      <div className="navbar glass pl-0 lg:px-32">
+        <div className="navbar-start pl-0 ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -31,46 +77,54 @@ const NavBar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link
+            to="/"
+            className="btn btn-ghost text-xl md:text-2xl font-bold px-0 md:px-4"
+          >
+            Dream House
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 items-center ">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1 items-center ">{links}</ul>
         </div>
         <div className="navbar-end items-center gap-3">
-          <div
-            tabIndex={0}
-            role="button"
-            className="  btn-circle avatar tooltip tooltip-left border" data-tip="hello" 
-          >
-            <div className="w-full rounded-full tooltip tooltip-left" data-tip="hello">
-              <img className="w-full h-full"
-                alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" 
-              />
+          {user && (
+            <div
+              tabIndex={0}
+              role="button"
+              className="  btn-circle avatar tooltip tooltip-left border"
+              data-tip={user.displayName}
+            >
+              {" "}
+              <div className="w-full rounded-full">
+                <Link to="/profile">
+                  <img
+                    className="w-full h-full"
+                    alt="Profile Picture"
+                    src={user?.photoURL}
+                  />
+                </Link>
+              </div>
             </div>
-          </div>
-          <a className="btn">Button</a>
+          )}
+
+          {user ? (
+            <button
+              className="btn btn-neutral rounded-sm md::text-[15px] font-bold"
+              onClick={handleLogout}
+            >
+              Logout
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="btn btn-neutral rounded-sm md:text-[15px] font-bold ">
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
