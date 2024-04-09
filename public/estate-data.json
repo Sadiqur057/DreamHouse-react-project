@@ -9,7 +9,12 @@
     "status": "rent",
     "area": "1,200 sq ft",
     "location": "789 Oak Street, Metropolis",
-    "facilities": ["living room", "swimming pool"]
+    "facilities": ["living room", "swimming pool"],
+    "additional_information": [
+      "24/7 security and maintenance",
+      "Pet-friendly building",
+      "Walking distance to entertainment venues"
+    ]
   },
   {
     "image" : "https://i.postimg.cc/pVq0yjWr/town-house.jpg",
@@ -21,7 +26,12 @@
     "status": "sale",
     "area": "1,800 sq ft",
     "location": "456 Elm Avenue, Cityville",
-    "facilities": ["living room", "kitchen", "rooftop"]
+    "facilities": ["living room", "kitchen", "rooftop"],
+    "additional_information": [
+      "Gated community with security",
+      "HOA amenities such as landscaping",
+      "Proximity to public transportation"
+    ]
   },
   {
     "image" : "https://i.postimg.cc/VvSjHd3B/single-house.jpg",
@@ -33,7 +43,12 @@
     "status": "sale",
     "area": "2,000 sq ft",
     "location": "123 Main Street, Anytown",
-    "facilities": ["living room", "kitchen", "backyard"]
+    "facilities": ["living room", "kitchen", "backyard"],
+    "additional_information": [
+      "Neighborhood with top-rated schools",
+      "Family-friendly community",
+      "Close to grocery stores and recreational areas"
+    ]
   },
   {
     "image" : "https://i.postimg.cc/prdXxSxP/student.jpg",
@@ -45,7 +60,12 @@
     "status": "rent",
     "area": "600 sq ft",
     "location": "101 Campus Drive, Town",
-    "facilities": ["living room", "study lounge"]
+    "facilities": ["living room", "study lounge"],
+    "additional_information": [
+      "Nearby campus shuttle service",
+      "Individual leases available",
+      "Social events organized by management"
+    ]
   },
   {
     "image" : "https://i.postimg.cc/4yfgc4Yv/slider-15.jpg",
@@ -57,7 +77,12 @@
     "status": "rent",
     "area": "1,500 sq ft",
     "location": "321 Maple Lane, Serenity Springs",
-    "facilities": ["living room", "kitchen", "clubhouse"]
+    "facilities": ["living room", "kitchen", "clubhouse"],
+    "additional_information": [
+      "Assisted living services available",
+      "Wellness programs and fitness classes",
+      "Scheduled transportation for errands and appointments"
+    ]
   },
   {
     "image" : "https://i.postimg.cc/x1C175TG/19.jpg",
@@ -69,6 +94,11 @@
     "status": "rent",
     "area": "800 sq ft",
     "location": "Beachfront, Paradise Island",
-    "facilities": ["living room", "kitchen", "patio"]
+    "facilities": ["living room", "kitchen", "patio"],
+    "additional_information": [
+      "Beach equipment provided",
+      "Local restaurant recommendations",
+      "Outdoor activities nearby"
+    ]
   }
 ]
