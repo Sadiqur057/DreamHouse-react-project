@@ -4,10 +4,10 @@ import { AuthContext } from "../../../providers/AuthProvider";
 import { toast } from "react-toastify";
 
 const NavBar = () => {
-  const { user, logOutUser } = useContext(AuthContext);
+  const { user, logOutUser, loading } = useContext(AuthContext);
   const handleLogout = () => {
     logOutUser().then(() => {
-      toast.success("Logged out successfully")
+      toast.success("Logged out successfully");
     });
   };
 
@@ -44,6 +44,16 @@ const NavBar = () => {
           Update Profile
         </NavLink>
       )}
+      {user && (
+        <NavLink
+          to="/bookmarks"
+          className={({ isActive }) =>
+            isActive ? activeStyles : inactiveStyles
+          }
+        >
+          Bookmarks
+        </NavLink>
+      )}
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? activeStyles : inactiveStyles)}
@@ -54,7 +64,7 @@ const NavBar = () => {
   );
   return (
     <div className="fixed w-full glass z-50">
-      <div className="navbar glass pl-0 lg:px-32">
+      <div className="navbar glass pl-0 xl:px-32">
         <div className="navbar-start pl-0 ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -96,9 +106,8 @@ const NavBar = () => {
               tabIndex={0}
               role="button"
               className="  btn-circle avatar tooltip tooltip-left border"
-              data-tip={user.displayName}
+              data-tip={user?.displayName}
             >
-              {" "}
               <div className="w-full rounded-full">
                 <Link to="/profile">
                   <img
@@ -118,6 +127,8 @@ const NavBar = () => {
             >
               Logout
             </button>
+          ) : loading ? (
+            <span className="loading loading-spinner loading-md mr-10"></span>
           ) : (
             <Link to="/login">
               <button className="btn btn-neutral rounded-sm md:text-[15px] font-bold ">
