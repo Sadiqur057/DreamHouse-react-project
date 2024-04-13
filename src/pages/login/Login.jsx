@@ -85,9 +85,9 @@ const Login = () => {
       <Helmet>
         <title>DH | Login</title>
       </Helmet>
-      <div className="flex flex-col w-full justify-center mx-auto  lg:p-14 lg:flex-row lg:justify-center lg:gap-10 items-center lg:glass lg:items-center mt-6 lg:mt-16 p-0 lg:w-fit rounded-md">
-        <div className="flex flex-col justify-center text-center rounded-sm w-full  lg:max-w-md xl:max-w-lg lg:text-left p-0 flex-1">
-          <div className="m-0 p-8 space-y-3 rounded-sm bg-base-100 mx-auto max-w-[380px] lg:min-w-[380px] w-[90%]">
+      <div className="flex flex-col w-full justify-center mx-auto  lg:flex-row lg:justify-center items-center lg:glass lg:items-center mt-6 lg:mt-16  lg:w-fit rounded-md">
+        <div className="flex flex-col justify-center text-center rounded-sm w-full  md:w-[400px]  lg:text-left p-0 flex-1">
+          <div className="m-0 p-8 space-y-3 rounded-sm bg-base-100 mx-auto lg:w-full lg:max-w-[400px] w-[90%]">
             <h1 className="text-2xl font-bold text-center">Login Here</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="space-y-1">
@@ -173,7 +173,7 @@ const Login = () => {
             </p>
           </div>
         </div>
-        <div className="items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 hidden lg:flex">
+        <div className="items-center justify-center  mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 hidden lg:flex w-[400px] p-6">
           <img
             src={loginImg}
             alt=""
