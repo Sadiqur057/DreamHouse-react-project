@@ -6,7 +6,13 @@ const Contact = () => {
       <Helmet>
         <title>DH | Contact Us</title>
       </Helmet>
-      <div className="grid max-w-3xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x md:glass my-10 w-[90%]">
+      <div
+        className="grid max-w-3xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x md:glass my-10 w-[90%]"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        data-aos-offset="10"
+      >
         <div className="p-10 self-center  glass lg:md-transparent md:h-full flex flex-col justify-center mb-6 md:mb-0">
           <h1 className="text-4xl font-bold mb-4">Get in touch</h1>
           <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
@@ -51,7 +57,10 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <form noValidate="" className="w-full max-w-xl p-8 mx-auto space-y-6 flex-1 bg-base-100 self-end ">
+        <form
+          noValidate=""
+          className="w-full max-w-xl p-8 mx-auto space-y-6 flex-1 bg-base-100 self-end "
+        >
           <div>
             <label htmlFor="name" className="block mb-1 ml-1">
               Name
