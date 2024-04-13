@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 import { toast } from "react-toastify";
 
 const UpdateProfile = () => {
-  const { updateUserProfile, user } = useContext(AuthContext);
+  const { updateUserProfile, user, setReload } = useContext(AuthContext);
   const {
     register,
     handleSubmit,
@@ -20,6 +20,7 @@ const UpdateProfile = () => {
     const photo = data.photo;
     updateUserProfile(name, photo)
       .then(() => {
+        setReload(true)
         navigate("/profile");
       })
       .catch((error) => {
@@ -32,8 +33,16 @@ const UpdateProfile = () => {
       <Helmet>
         <title>DH | Update Profile</title>
       </Helmet>
-      <section className="bg-base-200 pt-14 lg:pt-0 min-h-screen flex items-center bg-cool">
-        <div className=" max-w-6xl mx-auto my-10 w-[90%]  md:w-[500px]">
+      <section className="bg-base-200 pt-14 lg:pt-10 min-h-screen flex items-center bg-cool"
+      >
+        <div
+          className=" max-w-6xl mx-auto my-10 w-[90%]  md:w-[500px]"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="600"
+          data-aos-offset="10"
+
+        >
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="w-full p-6 md:p-12 mx-auto space-y-6 bg-base-100"
