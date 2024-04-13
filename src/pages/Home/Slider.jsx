@@ -31,6 +31,7 @@ const Slider = () => {
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
         }}
+        loop={true}
         spaceBetween={0}
         navigation={{
           clickable: true,
@@ -114,6 +115,7 @@ const Slider = () => {
             src={slider2}
             className="object-cover object-center w-full h-full "
             alt="Real Estate"
+            
           />
           <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
@@ -123,6 +125,7 @@ const Slider = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="500"
+              
             >
               Feel like Vacation
             </h1>
@@ -377,17 +380,26 @@ your dream home is just a click away.
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={-10}
+        loop={true}
         slidesPerView={5}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className=" w-[90%] absolute -top-36 md:-top-28 lg:w-1/2 md:w-2/3 glass rounded-md h-16 md:h-24 -mb-20"
+        data-aos="zoom-in-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+        data-aos-offset="10"
       >
         <SwiperSlide className="p-2 md:p-3 ">
           <img
             className="h-full w-full object-cover object-center rounded-md"
             src={slider1}
             alt="Thumb Flower 1"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-duration="600"
+            data-aos-offset="10"
           />
         </SwiperSlide>
         <SwiperSlide className="p-2 md:p-3  ">
@@ -395,6 +407,10 @@ your dream home is just a click away.
             className="h-full w-full object-cover object-center rounded-md"
             src={slider2}
             alt="Thumb Flower 1"
+            data-aos="zoom-in"
+            data-aos-delay="1100"
+            data-aos-duration="600"
+            data-aos-offset="10"
           />
         </SwiperSlide>
         <SwiperSlide className="p-2 md:p-3 ">
@@ -402,6 +418,10 @@ your dream home is just a click away.
             className="h-full w-full object-cover object-center rounded-md"
             src={slider3}
             alt="Thumb Flower 1"
+            data-aos="zoom-in"
+            data-aos-delay="1200"
+            data-aos-duration="600"
+            data-aos-offset="10"
           />
         </SwiperSlide>
         <SwiperSlide className="p-2 md:p-3 ">
@@ -409,6 +429,10 @@ your dream home is just a click away.
             className="h-full w-full object-cover object-center rounded-md"
             src={slider4}
             alt="Thumb Flower 1"
+            data-aos="zoom-in"
+            data-aos-delay="1300"
+            data-aos-duration="600"
+            data-aos-offset="10"
           />
         </SwiperSlide>
         <SwiperSlide className="p-2 md:p-3 ">
@@ -416,11 +440,19 @@ your dream home is just a click away.
             className="h-full w-full object-cover object-center rounded-md"
             src={slider5}
             alt="Thumb Flower 1"
+            data-aos="zoom-in"
+            data-aos-delay="1400"
+            data-aos-duration="600"
+            data-aos-offset="10"
           />
         </SwiperSlide>
       </Swiper>
 
-      <div className="flex gap-4 z-50 bottom-60 md:bottom-56 absolute  w-full justify-center">
+      <div className="flex gap-4 z-50 bottom-60 md:bottom-56 absolute  w-full justify-center"
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                  data-aos-duration="500"
+                  data-aos-offset="10">
         <div className="slider-button-prev cursor-pointer  rounded-full p-2 bg-base-200">
           <GrFormPrevious className="text-2xl" />
         </div>
