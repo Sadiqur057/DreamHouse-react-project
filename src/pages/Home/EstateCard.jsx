@@ -25,6 +25,7 @@ const EstateCard = ({ data }) => {
       data-aos="fade-up"
       data-aos-delay="0"
       data-aos-duration="1000"
+      data-aos-offset="0"
     >
       <figure className="relative">
         <img
@@ -41,7 +42,7 @@ const EstateCard = ({ data }) => {
       </figure>
       <div className="p-3 flex flex-col text-[15px]">
         <div className="flex-1 h-fit">
-          <h2 className="font-semibold text-2xl mb-1">{estate_title}</h2>
+          <h2 className="font-semibold text-[22px] md:text-2xl mb-1">{estate_title}</h2>
           <p className="font-medium text-gray-500">{segment_name}</p>
           <p className="text-gray-600  py-[10px] ">
             {description.slice(0, 60)}...
