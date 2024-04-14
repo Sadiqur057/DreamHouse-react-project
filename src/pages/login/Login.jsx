@@ -19,6 +19,9 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+
+
+
   // handle show password button
   const [showPassword, setShowPassword] = useState(false);
   const handleViewPassword = () => {
@@ -26,11 +29,12 @@ const Login = () => {
   };
 
   // accessing auth context
-  const { loginUser, googleLogin, githubLogin } = useContext(AuthContext);
-  // if(user){
-  //   navigate(location?.state? location.state :"/profile");
-  // }
+  console.log(location?.state)
+  const { loginUser, googleLogin, githubLogin } =
+    useContext(AuthContext);
 
+    
+    
   // managing react hook form
   const {
     register,
@@ -44,6 +48,7 @@ const Login = () => {
       .then(() => {
         toast.success("Login Success");
         navigate(location?.state ? location.state : "/");
+        console.log(location?.state);
       })
       .catch((error) => {
         toast.error(error);
@@ -73,13 +78,14 @@ const Login = () => {
       })
       .catch((error) => {
         const errorMsg = error.message.split("(")[1].split(")")[0];
-        if (errorMsg === "auth/invalid-credential") {
+        if (errorMsg === "auth/invalid-crdential") {
           toast.error("Your email or password is incorrect");
         } else {
           toast.error(errorMsg);
         }
       });
   };
+  
   return (
     <section className="bg-base-200 lg:pt-0 lg:min-h-[760px] min-h-screen lg:h-screen flex py-[60px] items-center bg-cool">
       <Helmet>
