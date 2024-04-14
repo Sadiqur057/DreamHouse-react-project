@@ -1,8 +1,39 @@
-# React + Vite
+# Dream House - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Dream House is a real estate website that allows users to explore various residential properties including single-family homes, townhouses, apartments, student housing, senior living communities, and vacation rentals. The website offers a fully functional authentication system powered by Firebase, enabling users to register, log in, view property details, bookmark their favorite listings, update and view their profiles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Live Preview: [Click here](https://dream-house-cbf6d.web.app/)
+
+## Installed Packages
+
+- React v18.2.0
+- React DOM v18.2.0
+- React Hook Form v7.51.2
+- AOS v2.3.4
+- Swiper v11.1.0
+- React Router DOM v6.22.3
+- Firebase v10.10.0
+- React Icons v5.0.1
+- React Helmet Async v2.0.4
+- React Toastify v10.0.5
+- Sort-By v1.2.0
+- Match-Sorter v6.3.4
+- LocalForage v1.10.0
+
+## Pages
+
+- **Home**: Landing page displaying a beautiful animated slider, featured properties, clients review and FAQ.
+- **Profile**: User profile page to view user name, email and profile image.
+- **Update Profile**: update profile information: name and profile picture.
+- **Bookmarks**: View bookmarked properties.
+- **Contact Us**: Static page displaying contact information and a form.
+
+## Functionalities
+
+- **Authentication**: Users can sign up, log in, and log out securely using Firebase authentication. Additionally supports google and github login
+- **Property Listings**: Browse various types of residential properties with detailed information.
+- **Bookmarking**: Save favorite listings for later viewing.
+- **Profile Management**: Users can update their profile information and profile picture.
+
