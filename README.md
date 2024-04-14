@@ -33,6 +33,7 @@ Dream House is a real estate website that allows users to explore various reside
 ## Functionalities
 
 - **Authentication**: Users can sign up, log in, and log out securely using Firebase authentication. Additionally supports google and github login
+- **Form Validation**: Basic form validation handled using react hook form
 - **Property Listings**: Browse various types of residential properties with detailed information.
 - **Bookmarking**: Save favorite listings for later viewing.
 - **Profile Management**: Users can update their profile information and profile picture.
