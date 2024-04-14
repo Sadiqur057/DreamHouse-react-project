@@ -1,9 +1,13 @@
+import client1 from '../../assets/images/clients/client-1.png'
+import client2 from '../../assets/images/clients/client-2.png'
+import client3 from '../../assets/images/clients/client-3.png'
+import client4 from '../../assets/images/clients/client-4.png'
 const Reviews = () => {
   return (
     <section className="bg-cool  font-poppins">
       <div className="container px-6 py-8 lg:py-12 mx-auto">
         <div className="grid items-center md:gap-4 xl:grid-cols-6">
-          <div className="max-w-xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
+          <div className="max-w-xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left 2xl:px-10">
             <h2 className="text-3xl md:text-4xl font-semibold ">
               Success Stories Straight from Our Clients!
             </h2>
@@ -27,7 +31,7 @@ const Reviews = () => {
                     <div className="flex space-x-4">
                       <div>
                         <img
-                          src="https://source.unsplash.com/100x100/?portrait"
+                          src={client1}
                           alt=""
                           className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                         />
@@ -71,7 +75,7 @@ const Reviews = () => {
                     <div className="flex space-x-4">
                       <div>
                         <img
-                          src="https://source.unsplash.com/100x100/?portrait"
+                          src={client2}
                           alt=""
                           className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                         />
@@ -116,7 +120,7 @@ const Reviews = () => {
                     <div className="flex space-x-4">
                       <div>
                         <img
-                          src="https://source.unsplash.com/100x100/?portrait"
+                          src={client3}
                           alt=""
                           className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                         />
@@ -160,7 +164,7 @@ const Reviews = () => {
                     <div className="flex space-x-4">
                       <div>
                         <img
-                          src="https://source.unsplash.com/100x100/?portrait"
+                          src={client4}
                           alt=""
                           className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                         />
