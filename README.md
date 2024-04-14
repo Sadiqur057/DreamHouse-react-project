@@ -37,3 +37,73 @@ Dream House is a real estate website that allows users to explore various reside
 - **Bookmarking**: Save favorite listings for later viewing.
 - **Profile Management**: Users can update their profile information and profile picture.
 
+## Screenshots
+
+<details>
+  <summary>Home Page - Slider </summary>
+
+![Screenshots](Screenshots/home-slider.png)
+
+</details>
+<details>
+  <summary>Home Page - Estates </summary>
+
+![Screenshots](Screenshots/home-estates.png)
+
+</details>
+<details>
+  <summary>Home Page - Clients Review </summary>
+
+![Screenshots](Screenshots/home-clients-review.png)
+
+</details>
+<details>
+  <summary>Home Page - FAQ </summary>
+
+![Screenshots](Screenshots/home-FAQ-Navbar.png)
+
+</details>
+<details>
+  <summary>Property Details</summary>
+
+![Screenshots](Screenshots/property-details.png)
+
+</details>
+
+<details>
+  <summary>Bookmarks Page</summary>
+
+![Screenshots](Screenshots/bookmarks.png)
+
+</details>
+<details>
+  <summary>Profile Page</summary>
+
+![Screenshots](Screenshots/profile.png)
+
+</details>
+
+<details>
+  <summary>Update Profile Page</summary>
+
+![Screenshots](Screenshots/update-profile.png)
+
+</details>
+<details>
+  <summary>Contact us Page</summary>
+
+![Screenshots](Screenshots/contact.png)
+
+</details>
+<details>
+  <summary>Login Page</summary>
+
+![Screenshots](Screenshots/login.png)
+
+</details>
+<details>
+  <summary>Register Page</summary>
+
+![Screenshots](Screenshots/register.png)
+
+</details>
